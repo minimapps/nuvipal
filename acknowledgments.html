@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NuviPal – Open Source Acknowledgments</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      background: #fff;
+      color: #111;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.25;
+    }
+
+    a {
+      color: #0066cc;
+    }
+
+    ul {
+      padding-left: 1.2em;
+    }
+
+    li {
+      margin-bottom: 0.75em;
+    }
+
+    .note {
+      padding: 14px 16px;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      background: #f7f7f9;
+    }
+
+    .license-list strong {
+      display: block;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 16px;
+      border-top: 1px solid #ddd;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    footer .current {
+      font-weight: 600;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #1c1c1e;
+        color: #f2f2f7;
+      }
+
+      a {
+        color: #6eb3ff;
+      }
+
+      footer {
+        color: #aeaeb2;
+        border-top-color: #3a3a3c;
+      }
+
+      .note {
+        background: #2c2c2e;
+        border-color: #3a3a3c;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        color: #111;
+      }
+
+      a {
+        color: #0066cc;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Open Source Acknowledgments</h1>
+  <p><strong>Last updated:</strong> August 23, 2026</p>
+
+  <p>
+    NuviPal is built with Apple's system frameworks and the open-source libraries listed below.
+    We are grateful to their authors and contributors.
+  </p>
+
+  <h2>Libraries in the App</h2>
+  <ul class="license-list">
+    <li>
+      <strong><a href="https://github.com/firebase/firebase-ios-sdk">Firebase Apple SDK</a></strong>
+      Apache License 2.0. Copyright Google LLC. NuviPal uses FirebaseCore and FirebaseAuth.
+    </li>
+    <li>
+      <strong><a href="https://github.com/google/GoogleUtilities">GoogleUtilities</a></strong>
+      Apache License 2.0. Copyright Google LLC.
+    </li>
+    <li>
+      <strong><a href="https://github.com/google/gtm-session-fetcher">GTMSessionFetcher</a></strong>
+      Apache License 2.0. Copyright Google LLC.
+    </li>
+    <li>
+      <strong><a href="https://github.com/google/promises">Promises</a></strong>
+      Apache License 2.0. Copyright Google LLC.
+    </li>
+    <li>
+      <strong><a href="https://github.com/google/interop-ios-for-google-sdks">Interop for Google SDKs</a></strong>
+      Apache License 2.0. Copyright Google LLC.
+    </li>
+    <li>
+      <strong><a href="https://github.com/google/app-check">App Check (interop headers only)</a></strong>
+      Apache License 2.0. Copyright Google LLC. Pulled in as a dependency of FirebaseAuth. NuviPal does not use
+      App Check.
+    </li>
+  </ul>
+
+  <p>
+    Full license texts, notices, and source code are available in each project's linked repository.
+    NuviPal's use of these libraries does not imply endorsement by their authors.
+  </p>
+
+  <div class="note">
+    <strong>Note:</strong> Swift Package Manager resolves several further Google packages as part of the Firebase
+    distribution, including analytics and advertising measurement components. NuviPal does not link or ship any
+    of them. The app contains no analytics SDK and no advertising SDK.
+  </div>
+
+  <h2>Server Components</h2>
+  <p>
+    NuviPal's analysis gateway runs on Firebase Cloud Functions and uses the
+    <a href="https://github.com/apple/app-store-server-library-node">App Store Server Library for Node.js</a>
+    (Apache License 2.0, Copyright Apple Inc.) to verify subscription receipts. These components run on the
+    server and are not part of the app you install.
+  </p>
+
+  <h2>AI Models</h2>
+  <p>
+    Meal analysis is performed by third-party AI models accessed through
+    <a href="https://openrouter.ai">OpenRouter</a>. The models are operated by their respective providers under
+    their own terms and licenses, and are not distributed with NuviPal.
+  </p>
+
+  <h2>Nutrition Scoring</h2>
+  <p>
+    NuviPal's meal grading is derived from publicly documented nutrition scoring approaches. NuviPal is not
+    affiliated with, endorsed by, or certified by any health authority or standards body.
+  </p>
+
+  <h2>Privacy Manifests</h2>
+  <p>
+    NuviPal includes a privacy manifest for app-level API use. Some open-source packages may also include
+    their own privacy manifests when required by Apple platform rules.
+  </p>
+
+  <footer>
+    <p>
+      <a href="support.html">Support</a> ·
+      <a href="privacy-policy.html">Privacy Policy</a> ·
+      <a href="terms.html">Terms of Use</a> ·
+      <span class="current">Acknowledgments</span>
+    </p>
+  </footer>
+</body>
+</html>

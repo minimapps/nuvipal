@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NuviPal Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      background: #fff;
+      color: #111;
+    }
+
+    h1, h2 {
+      line-height: 1.25;
+    }
+
+    a {
+      color: #0066cc;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 16px;
+      border-top: 1px solid #ddd;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    footer .current {
+      font-weight: 600;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #1c1c1e;
+        color: #f2f2f7;
+      }
+
+      a {
+        color: #6eb3ff;
+      }
+
+      footer {
+        color: #aeaeb2;
+        border-top-color: #3a3a3c;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        color: #111;
+      }
+
+      a {
+        color: #0066cc;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>NuviPal Privacy Policy</h1>
+  <p><strong>Effective date:</strong> August 23, 2026</p>
+  <p><strong>Last updated:</strong> August 23, 2026</p>
+
+  <p>
+    NuviPal is an iOS app for logging meals. You photograph or describe a meal, an AI model estimates its
+    ingredients and nutrition, and NuviPal keeps the result in a food diary with a daily score and progress
+    charts. This Privacy Policy explains how NuviPal handles information.
+  </p>
+
+  <h2>Meal Photos and AI Analysis</h2>
+  <p>
+    When you ask NuviPal to analyze a meal, the photo you took (or the note you typed, or both) is sent to
+    NuviPal's analysis gateway, which runs on Google Cloud, and from there to
+    <a href="https://openrouter.ai/privacy">OpenRouter</a>, which forwards it to the AI model that produces the
+    estimate. This is the only time your meal data leaves your device to a service that is not Apple's.
+  </p>
+
+  <p>
+    NuviPal does not store your photos or notes on its gateway. They are held in memory only for the length of
+    the request and are not written to any database, log, or file. Requests are routed only to model providers
+    that are configured not to retain prompts.
+  </p>
+
+  <p>
+    Analysis is not automatic. Nothing is sent until you tap to analyze a meal.
+  </p>
+
+  <h2>Your Account</h2>
+  <p>
+    Analysis requires signing in with Apple. NuviPal does not ask Apple for your name or your email address and
+    does not receive them. What NuviPal receives is the anonymous account identifier Apple issues for this app,
+    which cannot be used to identify you in any other app or service.
+  </p>
+
+  <p>
+    NuviPal also stores a one-way cryptographic hash of that identifier so the free trial scans cannot be reset
+    by deleting and reinstalling the app. The hash cannot be reversed back to your Apple account.
+  </p>
+
+  <p>
+    Authentication is provided by Firebase Authentication, a Google service.
+  </p>
+
+  <h2>What NuviPal's Server Stores</h2>
+  <p>
+    NuviPal's gateway keeps a small record for your account so that analysis can work: how many analyses you have
+    run, how much AI usage they cost against your allowance, how many free scans remain, whether your subscription
+    is active and when it expires, and an identifier that links your purchase to your account.
+  </p>
+
+  <p>
+    NuviPal's server does not store your meals, your photos, your notes, your nutrition history, your weight, or
+    any health data. Those never reach it in a stored form.
+  </p>
+
+  <h2>Your Diary</h2>
+  <p>
+    Your meal history, meal photos, nutrition totals, day scores, weight entries, and app settings are stored on
+    your device. When you are signed in to iCloud, they also sync through Apple's CloudKit service in your private
+    iCloud database, so the same diary appears on your other devices.
+  </p>
+
+  <p>
+    iCloud sync is not a backup. A meal deleted on one device is deleted everywhere, and deleted meals cannot be
+    restored. NuviPal also removes the full-resolution image of older meals automatically to limit how much space
+    the diary uses; the meal and its nutrition data remain.
+  </p>
+
+  <p>
+    NuviPal does not operate its own servers for storing your diary.
+  </p>
+
+  <h2>Apple Health</h2>
+  <p>
+    If you allow it, NuviPal writes the nutrition of the meals you log into Apple Health, and reads your body
+    weight and your active and resting energy from Apple Health to show them alongside your intake.
+  </p>
+
+  <p>
+    Health data stays between your device and Apple Health. NuviPal never sends health data to its gateway, to
+    OpenRouter, to any AI model, or to any other third party, and never uses it for advertising or marketing.
+    You can withdraw access at any time in the Health app under Sharing.
+  </p>
+
+  <h2>Subscriptions and Purchases</h2>
+  <p>
+    NuviPal offers auto-renewable subscriptions through Apple In-App Purchase. Payments, renewals, cancellations,
+    refunds, and subscription management are handled by Apple.
+  </p>
+
+  <p>
+    To unlock analysis, the app sends the purchase receipt Apple signed to NuviPal's gateway, which verifies
+    Apple's signature and records whether the subscription is active and when it expires. Apple also notifies the
+    gateway when a subscription renews, lapses, or is refunded. NuviPal never receives your payment details.
+  </p>
+
+  <p>
+    NuviPal does not use a third-party subscription analytics or entitlement service.
+  </p>
+
+  <h2>Analytics and Tracking</h2>
+  <p>
+    NuviPal does not include advertising SDKs, third-party analytics SDKs, or ad tracking, and does not track you
+    across apps or websites. NuviPal does not sell personal data.
+  </p>
+
+  <h2>Apple and Third-Party Services</h2>
+  <p>
+    NuviPal relies on Apple services such as iCloud, CloudKit, StoreKit, Sign in with Apple, and HealthKit; on
+    Google's Firebase for authentication and the analysis gateway; and on OpenRouter for access to AI models. Your
+    use of those services is also subject to their own privacy policies.
+  </p>
+
+  <h2>External Links</h2>
+  <p>
+    NuviPal may include links to external pages such as privacy, terms, support, or Apple subscription management
+    resources. If you open an external link, your use of that website or service is subject to its own privacy
+    policy and terms.
+  </p>
+
+  <h2>Children's Privacy</h2>
+  <p>
+    NuviPal is not intended to knowingly collect personal information from children. If you believe that a child
+    has provided personal information through the app, please contact us.
+  </p>
+
+  <h2>Data Deletion</h2>
+  <p>
+    You can delete individual meals from within the app, and you can export your whole diary to a CSV file at any
+    time.
+  </p>
+
+  <p>
+    Deleting your account in the app removes the record NuviPal's gateway keeps for you, revokes NuviPal's access
+    to your Apple account, and deletes your authentication record. Your diary is separate: to remove it, delete
+    your meals in the app, or remove the app's data from your device and from iCloud using the iOS and iCloud
+    settings.
+  </p>
+
+  <p>
+    Deleting your account does not cancel your subscription. Subscriptions are cancelled in your Apple account
+    settings.
+  </p>
+
+  <h2>Changes to This Policy</h2>
+  <p>
+    This Privacy Policy may be updated from time to time. Any changes will be posted on this page with an updated
+    effective date.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    If you have questions about this Privacy Policy, contact us at:
+    <a href="mailto:minimapps.support@icloud.com?subject=NuviPal%20Privacy%20Question">minimapps.support@icloud.com</a>
+  </p>
+
+  <footer>
+    <p>
+      <a href="support.html">Support</a> ·
+      <span class="current">Privacy Policy</span> ·
+      <a href="terms.html">Terms of Use</a> ·
+      <a href="acknowledgments.html">Acknowledgments</a>
+    </p>
+  </footer>
+</body>
+</html>
