@@ -71,7 +71,7 @@
 
   <h1>NuviPal Privacy Policy</h1>
   <p><strong>Effective date:</strong> August 23, 2026</p>
-  <p><strong>Last updated:</strong> August 23, 2026</p>
+  <p><strong>Last updated:</strong> September 23, 2026</p>
 
   <p>
     NuviPal is an iOS app for logging meals. You photograph or describe a meal, an AI model estimates its
@@ -81,36 +81,34 @@
 
   <h2>Meal Photos and AI Analysis</h2>
   <p>
-    When you ask NuviPal to analyze a meal, the photo you took (or the note you typed, or both) is sent to
-    NuviPal's analysis gateway, which runs on Google Cloud, and from there to
-    <a href="https://openrouter.ai/privacy">OpenRouter</a>, which forwards it to the AI model that produces the
-    estimate. This is the only time your meal data leaves your device to a service that is not Apple's.
+    With your permission, NuviPal sends the meal photos, descriptions, and corrections you submit to its cloud
+    service and third-party AI providers to estimate nutrition. Corrections may also include the meal's existing
+    analysis. This does not upload your entire diary.
   </p>
 
   <p>
     NuviPal does not store your photos or notes on its gateway. They are held in memory only for the length of
-    the request and are not written to any database, log, or file. Requests are routed only to model providers
-    that are configured not to retain prompts.
+    the request and are not deliberately written to a database, log, or file by the analysis service.
+    Third-party providers handle the content under their own privacy policies.
   </p>
 
   <p>
-    Analysis is not automatic. Nothing is sent until you tap to analyze a meal.
+    NuviPal asks for AI data-sharing permission before sending your first analysis request. After you allow
+    it, Instant Analysis can start processing when you add a meal. You can turn off Instant Analysis or
+    withdraw AI-sharing permission in <strong>Settings → AI Analysis</strong>. Withdrawal prevents future requests;
+    it cannot recall content already sent. Your saved diary remains available without AI-sharing permission.
   </p>
 
   <h2>Your Account</h2>
   <p>
     Analysis requires signing in with Apple. NuviPal does not ask Apple for your name or your email address and
-    does not receive them. What NuviPal receives is the anonymous account identifier Apple issues for this app,
-    which cannot be used to identify you in any other app or service.
+    does not request them for your profile. NuviPal uses the account identifier Apple provides to manage your
+    sign-in, analysis allowance, and subscription.
   </p>
 
   <p>
-    NuviPal also stores a one-way cryptographic hash of that identifier so the free trial scans cannot be reset
-    by deleting and reinstalling the app. The hash cannot be reversed back to your Apple account.
-  </p>
-
-  <p>
-    Authentication is provided by Firebase Authentication, a Google service.
+    NuviPal retains a pseudonymous trial-usage record to prevent repeated free trials, including after account
+    deletion. This record does not contain your meals or photos.
   </p>
 
   <h2>What NuviPal's Server Stores</h2>
@@ -128,8 +126,8 @@
   <h2>Your Diary</h2>
   <p>
     Your meal history, meal photos, nutrition totals, day scores, weight entries, and app settings are stored on
-    your device. When you are signed in to iCloud, they also sync through Apple's CloudKit service in your private
-    iCloud database, so the same diary appears on your other devices.
+    your device. Meal records, photos, and manually entered weights can also sync through Apple's CloudKit
+    service in your private iCloud database. Device preferences are not all synced between devices.
   </p>
 
   <p>
@@ -149,8 +147,8 @@
   </p>
 
   <p>
-    Health data stays between your device and Apple Health. NuviPal never sends health data to its gateway, to
-    OpenRouter, to any AI model, or to any other third party, and never uses it for advertising or marketing.
+    Data read from Apple Health stays between your device and Apple Health. NuviPal never sends those readings to
+    its gateway or other third parties, and never uses them for advertising or marketing.
     You can withdraw access at any time in the Health app under Sharing.
   </p>
 
@@ -178,9 +176,10 @@
 
   <h2>Apple and Third-Party Services</h2>
   <p>
-    NuviPal relies on Apple services such as iCloud, CloudKit, StoreKit, Sign in with Apple, and HealthKit; on
-    Google's Firebase for authentication and the analysis gateway; and on OpenRouter for access to AI models. Your
-    use of those services is also subject to their own privacy policies.
+    NuviPal uses Apple services for iCloud sync, sign-in, purchases, and Health; Google's Firebase for
+    authentication and cloud request processing; and <a href="https://openrouter.ai/privacy">OpenRouter</a> and
+    its AI providers for meal analysis. These services handle the information described above under their own
+    privacy policies. The AI model provider may change over time.
   </p>
 
   <h2>External Links</h2>
@@ -204,7 +203,8 @@
 
   <p>
     Deleting your account in the app removes the record NuviPal's gateway keeps for you, revokes NuviPal's access
-    to your Apple account, and deletes your authentication record. Your diary is separate: to remove it, delete
+    to your Apple account, and deletes your authentication record. The pseudonymous trial-usage record described
+    above is retained to prevent repeated free trials. Your diary is separate: to remove it, delete
     your meals in the app, or remove the app's data from your device and from iCloud using the iOS and iCloud
     settings.
   </p>
@@ -217,7 +217,7 @@
   <h2>Changes to This Policy</h2>
   <p>
     This Privacy Policy may be updated from time to time. Any changes will be posted on this page with an updated
-    effective date.
+    last-updated date.
   </p>
 
   <h2>Contact</h2>
