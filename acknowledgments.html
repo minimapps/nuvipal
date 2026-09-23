@@ -35,13 +35,6 @@
       margin-bottom: 0.75em;
     }
 
-    .note {
-      padding: 14px 16px;
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      background: #f7f7f9;
-    }
-
     .license-list strong {
       display: block;
     }
@@ -73,10 +66,6 @@
         border-top-color: #3a3a3c;
       }
 
-      .note {
-        background: #2c2c2e;
-        border-color: #3a3a3c;
-      }
     }
 
     @media print {
@@ -93,7 +82,7 @@
 </head>
 <body>
   <h1>Open Source Acknowledgments</h1>
-  <p><strong>Last updated:</strong> August 23, 2026</p>
+  <p><strong>Last updated:</strong> September 23, 2026</p>
 
   <p>
     NuviPal is built with Apple's system frameworks and the open-source libraries listed below.
@@ -132,27 +121,6 @@
   <p>
     Full license texts, notices, and source code are available in each project's linked repository.
     NuviPal's use of these libraries does not imply endorsement by their authors.
-  </p>
-
-  <div class="note">
-    <strong>Note:</strong> Swift Package Manager resolves several further Google packages as part of the Firebase
-    distribution, including analytics and advertising measurement components. NuviPal does not link or ship any
-    of them. The app contains no analytics SDK and no advertising SDK.
-  </div>
-
-  <h2>Server Components</h2>
-  <p>
-    NuviPal's analysis gateway runs on Firebase Cloud Functions and uses the
-    <a href="https://github.com/apple/app-store-server-library-node">App Store Server Library for Node.js</a>
-    (Apache License 2.0, Copyright Apple Inc.) to verify subscription receipts. These components run on the
-    server and are not part of the app you install.
-  </p>
-
-  <h2>AI Models</h2>
-  <p>
-    Meal analysis is performed by third-party AI models accessed through
-    <a href="https://openrouter.ai">OpenRouter</a>. The models are operated by their respective providers under
-    their own terms and licenses, and are not distributed with NuviPal.
   </p>
 
   <h2>Nutrition Scoring</h2>
