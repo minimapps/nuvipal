@@ -71,7 +71,7 @@
 
   <h1>NuviPal Privacy Policy</h1>
   <p><strong>Effective date:</strong> August 23, 2026</p>
-  <p><strong>Last updated:</strong> September 23, 2026</p>
+  <p><strong>Last updated:</strong> October 30, 2026</p>
 
   <p>
     NuviPal is an iOS app for logging meals. You photograph or describe a meal, an AI model estimates its
@@ -97,6 +97,14 @@
     it, Instant Analysis can start processing when you add a meal. You can turn off Instant Analysis or
     withdraw AI-sharing permission in <strong>Settings → AI Analysis</strong>. Withdrawal prevents future requests;
     it cannot recall content already sent. Your saved diary remains available without AI-sharing permission.
+  </p>
+
+  <h2>Barcode Scanning</h2>
+  <p>
+    When you scan a barcode, NuviPal sends only the barcode number to
+    <a href="https://world.openfoodfacts.org/privacy">Open Food Facts</a>, a free public product database, to look up
+    the product's nutrition. The request carries no account identifier and no diary data, and it does not go through
+    NuviPal's gateway or AI providers.
   </p>
 
   <h2>Your Account</h2>
@@ -125,9 +133,11 @@
 
   <h2>Your Diary</h2>
   <p>
-    Your meal history, meal photos, nutrition totals, day scores, weight entries, and app settings are stored on
-    your device. Meal records, photos, and manually entered weights can also sync through Apple's CloudKit
-    service in your private iCloud database. Device preferences are not all synced between devices.
+    Your meal history, meal photos, nutrition totals, day scores, weight entries, body details, goals, and app
+    settings are stored on your device. Meal records, photos, and manually entered weights can also sync through
+    Apple's CloudKit service in your private iCloud database. Your body details (height, birth year, and sex) and
+    goal settings sync through iCloud key-value storage in your iCloud account. Other preferences stay on the
+    device.
   </p>
 
   <p>
@@ -147,8 +157,9 @@
   </p>
 
   <p>
-    Data read from Apple Health stays between your device and Apple Health. NuviPal never sends those readings to
-    its gateway or other third parties, and never uses them for advertising or marketing.
+    NuviPal never stores Apple Health readings in iCloud, never sends them to its gateway, to AI providers, or to
+    other third parties, and never uses them for advertising or marketing. Goals calculated from them, such as
+    your daily calorie goal, sync with your other goal settings.
     You can withdraw access at any time in the Health app under Sharing.
   </p>
 
@@ -178,7 +189,7 @@
   <p>
     NuviPal uses Apple services for iCloud sync, sign-in, purchases, and Health; Google's Firebase for
     authentication and cloud request processing; and <a href="https://openrouter.ai/privacy">OpenRouter</a> and
-    its AI providers for meal analysis. These services handle the information described above under their own
+    its AI providers for meal analysis; and Open Food Facts for barcode lookups. These services handle the information described above under their own
     privacy policies. The AI model provider may change over time.
   </p>
 
